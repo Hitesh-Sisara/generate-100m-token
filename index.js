@@ -16,7 +16,7 @@ jwt.sign(
   app_secret,
   {
     algorithm: "HS256",
-    expiresIn: "24h",
+    expiresIn: "365d",
     jwtid: uuid4(),
   },
   function (err, token) {
